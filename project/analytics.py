@@ -19,7 +19,6 @@ def avgfuel(val1):
         count+=1
     print(sum/count)
 
-avgfuel("Corporate")
 
 
 def totdist(val1):
@@ -33,7 +32,6 @@ def totdist(val1):
             dist+=int(i[11])
     print(dist)
 
-totdist("Corporate")
 
 
 def alertanalysis(val1):
@@ -42,7 +40,8 @@ def alertanalysis(val1):
     for i in db.FleetVehicleAlert(val1):
         count+=1
         severity[i[3]]+=1
+    print(count)
     for i in severity:
-        print(severity[i])
-
+        print(i,":",severity[i])
+alertanalysis("Corporate")
 

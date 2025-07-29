@@ -16,7 +16,6 @@ def InsertVehicle(val1,val2,val3,val4,val5,val6):
 
     mycursor.execute(sql, val)
     mydb.commit()
-    print(mycursor.rowcount, "record inserted.")
 
 
 def ListVehicle():
@@ -100,7 +99,6 @@ def InsertTelementary(val1,val2,val3,val4,val5,val6,val7,val8,val9):
 
     mycursor.execute(sql, val)
     mydb.commit()
-    print(mycursor.rowcount, "record inserted.")
 
 def FleetVehicleJoin(val1):
     mydb = mysql.connector.connect(
@@ -151,4 +149,3 @@ def AlertInsert(val1,val2,val3,val4):
     val=(val1,val2,val3,val4)
     mycursor.execute(sql, val)
     mydb.commit()
-    print(mycursor.rowcount, "record inserted.")
