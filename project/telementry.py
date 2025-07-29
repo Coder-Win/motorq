@@ -30,5 +30,5 @@ while(True):
         alert.fuel(fuel)
         db.InsertTelementary(vid, lat, long, engine, fuel, dist, diag, date_time, speed)
 
-    time.sleep(3)
+    time.sleep(30)
 

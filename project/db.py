@@ -146,7 +146,7 @@ def AlertInsert(val1,val2,val3,val4):
 
     mycursor = mydb.cursor()
 
-    sql = "INSERT INTO alerts (vid, type, timestamp) VALUES (%s, %s, %s, %s)"
+    sql = "INSERT INTO alerts (vid, type, timestamp, severity) VALUES (%s, %s, %s, %s)"
 
     val=(val1,val2,val3,val4)
     mycursor.execute(sql, val)
